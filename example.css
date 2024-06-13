@@ -1,0 +1,103 @@
+body {
+	background: skyblue;
+  }
+  
+  .parent {
+	position: relative;
+	margin-top: 125px;
+	/* overflow: hidden; */
+  }
+  
+  .icon {
+	height: 150px;
+	width: 450px;
+	color: black;
+	position: absolute;
+	box-shadow: 450px 0px orange;
+	border-radius: 25px 25px 25px 25px;
+	animation: wheels 10s infinite;
+  }
+  .icon1 {
+	content: "";
+	height: 75px;
+	width: 75px;
+	color: black;
+	position: absolute;
+	left: 500px;
+	top: 110px;
+	border-radius: 150px;
+	background: black;
+	box-shadow: 0px 0px black, 275px 0px black; 
+	animation: wheels 10s infinite;
+  }
+  .icon2 {
+	content: "";
+	height: 50px;
+	width: 450px;
+	color: black;
+	position: absolute;
+	left: 0;
+	box-shadow: 450px 0px #f1c579;
+	border-radius: 25px 25px 0px 0px;
+	animation: wheels 10s infinite;
+  }
+  
+  .windows {
+	height: 45px;
+	width: 35px;
+	color: black;
+	position: absolute;
+	box-shadow: 500px 25px darkgrey, 550px 25px darkgrey, 600px 25px darkgrey, 650px 25px darkgrey, 700px 25px darkgrey, 750px 25px darkgrey, 800px 25px darkgrey;
+	border-radius: 10px;
+	animation: wheels 10s infinite;
+  }
+  .driver {
+	width: 56px;
+	height: 45px;
+	position: absolute;
+	background: lightblue;
+	border: 2px solid black;
+	border-right: none;
+	left: 842px;
+	top: 25px;
+	border-radius: 10px 0px 0px 10px;
+	animation: wheels 10s infinite;
+  }
+  
+  .headlight {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background: yellow;
+	left: 875px;
+	top: 100px;
+	border-radius: 10px 0px 0px 10px;
+	animation: wheels 10s infinite;
+  }
+  
+  .taillights {
+	width: 15px;
+	height: 25px;
+	position: absolute;
+	background: red;
+	left: 450px;
+	top: 100px;
+	border-radius: 0px 10px 10px 0px;
+	animation: wheels 10s infinite;
+  }
+  .road{
+	width: 100vw;
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	top: 170px;
+	}
+	
+	@keyframes wheels {
+		0%{
+			transform: translate(-100vw, 0);
+		}
+		100%{
+			transform: translate(100vw, 0);
+		}
+	}
